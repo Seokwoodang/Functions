@@ -43,7 +43,7 @@ var sum = [{x: 1}, {x:2}, {x:3}].reduce(
 
 console.log(sum) // logs 6
 ```
----
+
 #
 #
 
@@ -54,7 +54,7 @@ var flattened = [[0, 1], [2, 3], [4, 5]].reduce(
   []
 );
 ```
----
+
 #
 #
 ## 객체 내의 값 인스턴스 개수 세기
