@@ -13,7 +13,13 @@ callback 에는 위의 네가지 인자가 들어가게되며 initialValue 값�
 [0,1,2,3,4].reduce(function(acc,curr,idx,src){
     return acc + cur;
 });
-```
+
+[0,1,2,3,4].reduce((prev,curr)=>prev+curr,0); // 초기값으로 0을 줌.
+```  
+
+#
+#
+
 ||acc|cur|idx|src|반환 값|
 |--|--|--|--|--|--|
 |1번째호출|0|1|1|[0,1,2,3,4]|1|
@@ -21,10 +27,12 @@ callback 에는 위의 네가지 인자가 들어가게되며 initialValue 값�
 |3번째호출|3|3|3|[0,1,2,3,4]|6|
 |4번째호출|6|4|4|[0,1,2,3,4]|10|
 
-```javascript
 
-[0,1,2,3,4].reduce((prev,curr)=>prev+curr,0); // 초기값으로 0을 줌.
-```
+
+
+#
+#
+#
 ## 객체 배열에서의 값 합산
 ```javascript
 var initialValue = 0;
@@ -35,6 +43,9 @@ var sum = [{x: 1}, {x:2}, {x:3}].reduce(
 
 console.log(sum) // logs 6
 ```
+---
+#
+#
 
 ## 중첩 배열 펼치기
 ```javascript
@@ -43,7 +54,9 @@ var flattened = [[0, 1], [2, 3], [4, 5]].reduce(
   []
 );
 ```
-
+---
+#
+#
 ## 객체 내의 값 인스턴스 개수 세기
 ```javascript
 var names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
@@ -62,3 +75,4 @@ var countedNames = names.reduce(function (allNames, name) {
 ```
 
 *[mdn사이트의 reduce() 함수 link](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)*
+
